@@ -1,0 +1,81 @@
+.reveal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.reveal__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.reveal__tag {
+  font-size: 12px;
+  color: var(--color-brand);
+  font-weight: 500;
+}
+
+/* RAG search */
+.rag-scan {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 8px;
+  max-width: 620px;
+  transition: opacity 0.45s ease;
+}
+
+.rag-scan.is-fading {
+  opacity: 0;
+}
+
+/* Result */
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.result__gantt {
+  width: 100%;
+  max-width: 480px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+/* Weeks-scale Gantt — traditional timeline with Listen's tiny finish bar */
+.weeks-gantt {
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+}
+
+.weeks-gantt__finish,
+.weeks-gantt__callout {
+  animation-delay: 0.4s;
+}
+
+.weeks-gantt__saved-label {
+  animation-delay: 0.8s;
+}
+
+.result__cta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+  .result__cta {
+    justify-content: stretch;
+  }
+  .result__cta .btn {
+    flex: 1;
+  }
+}

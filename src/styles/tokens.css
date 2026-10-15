@@ -1,0 +1,53 @@
+:root {
+  /* Brand */
+  --color-brand: #1e4dff;
+  --color-brand-hover: #1a3fd9;
+  --color-brand-soft: #eef2ff;
+
+  /* Listen phase blues — light to brand cobalt */
+  --color-listen-1: #dde6ff;
+  --color-listen-2: #94adff;
+  --color-listen-3: #4d6dfb;
+  --color-listen-4: #1e4dff;
+
+  /* Freed-budget green */
+  --color-freed: #16a37b;
+  --color-freed-soft: #e6f5ef;
+
+  /* Surfaces (near-monochrome, Listen-style) */
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f5f5;
+  --color-background-tertiary: #fafafa;
+  --color-background-success: #ecf8f3;
+  --color-background-warm: linear-gradient(180deg, #fff4d6 0%, #ffe8a8 100%);
+
+  /* Text */
+  --color-text-primary: #0a0a0a;
+  --color-text-secondary: #666666;
+  --color-text-muted: #9a9a9a;
+  --color-text-inverse: #ffffff;
+
+  /* Semantic */
+  --color-text-danger: #d4533c;
+  --color-text-success: #1d9e75;
+  --color-text-info: var(--color-brand);
+
+  /* Lines */
+  --color-border: #e8e8e8;
+  --color-border-strong: #1a1a1a;
+
+  /* Type */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Spacing & radii */
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 14px;
+  --border-radius-xl: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(10, 10, 10, 0.04);
+  --shadow-md: 0 4px 16px rgba(10, 10, 10, 0.06);
+  --shadow-lg: 0 12px 40px rgba(10, 10, 10, 0.08);
+}

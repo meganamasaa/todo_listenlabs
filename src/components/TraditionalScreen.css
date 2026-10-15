@@ -1,0 +1,119 @@
+.trad {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trad__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.trad__tag {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.trad__gantt {
+  width: 100%;
+  min-width: 0;
+}
+
+.trad__phase-name {
+  animation-duration: 0.4s;
+}
+
+.trad__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding-top: 4px;
+}
+
+.trad__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  background: var(--color-background-secondary);
+  padding: 6px 10px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.trad__legend-item:hover,
+.trad__legend-item.is-hovered {
+  background: var(--color-background-primary);
+  border-color: var(--color-border);
+}
+
+.trad__legend-item.is-pinned {
+  background: var(--color-brand-soft);
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+}
+
+.trad__legend-item.is-hidden {
+  display: none;
+}
+
+.trad__phase {
+  cursor: pointer;
+  outline: none;
+}
+
+.trad__phase rect {
+  transition: opacity 0.15s ease, stroke-width 0.15s ease;
+}
+
+.trad__phase:focus-visible rect,
+.trad__phase.is-hovered rect,
+.trad__phase.is-pinned rect {
+  stroke: var(--color-text-primary);
+  stroke-width: 1;
+}
+
+.trad__phase.is-pinned rect {
+  stroke-width: 1.5;
+}
+
+.trad__legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.trad__legend-name {
+  color: var(--color-text-primary);
+}
+
+.trad__footer {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid var(--color-border);
+  padding-top: 16px;
+}
+
+.trad__footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trad__hero-num {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.trad__cta-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}

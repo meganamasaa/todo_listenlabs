@@ -1,0 +1,22 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vercel
+
+# Added before GitHub push
+node_modules/
+dist/
+build/
+.next/
+out/
+.vercel/
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+.claude/
+.cursor/
+*.pem
+coverage/

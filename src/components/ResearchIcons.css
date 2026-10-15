@@ -1,0 +1,218 @@
+.ricon {
+  display: block;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.ricon--active {
+  color: var(--color-brand);
+}
+
+/* Chart bars rise/fall in a small wave when active. */
+.ricon--chart .ricon__bar {
+  fill: currentColor;
+  transform-box: fill-box;
+  transform-origin: bottom center;
+}
+
+.ricon--chart.ricon--active .ricon__bar {
+  animation: ricon-bar 1.2s ease-in-out infinite;
+}
+
+.ricon--chart.ricon--active .ricon__bar--0 {
+  animation-delay: 0s;
+}
+.ricon--chart.ricon--active .ricon__bar--1 {
+  animation-delay: 0.18s;
+}
+.ricon--chart.ricon--active .ricon__bar--2 {
+  animation-delay: 0.36s;
+}
+
+@keyframes ricon-bar {
+  0%,
+  100% {
+    transform: scaleY(0.55);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+/* Cluster dots pulse around the ring when active. */
+.ricon--cluster .ricon__dot {
+  fill: currentColor;
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0.5;
+}
+
+.ricon--cluster.ricon--active .ricon__dot {
+  animation: ricon-cluster 1.6s ease-in-out infinite;
+}
+
+.ricon--cluster.ricon--active .ricon__dot--0 {
+  animation-delay: 0s;
+}
+.ricon--cluster.ricon--active .ricon__dot--1 {
+  animation-delay: 0.13s;
+}
+.ricon--cluster.ricon--active .ricon__dot--2 {
+  animation-delay: 0.26s;
+}
+.ricon--cluster.ricon--active .ricon__dot--3 {
+  animation-delay: 0.39s;
+}
+.ricon--cluster.ricon--active .ricon__dot--4 {
+  animation-delay: 0.52s;
+}
+.ricon--cluster.ricon--active .ricon__dot--5 {
+  animation-delay: 0.65s;
+}
+.ricon--cluster.ricon--active .ricon__dot--6 {
+  animation-delay: 0.78s;
+}
+.ricon--cluster.ricon--active .ricon__dot--7 {
+  animation-delay: 0.91s;
+}
+
+@keyframes ricon-cluster {
+  0%,
+  80%,
+  100% {
+    opacity: 0.28;
+    transform: scale(0.75);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+/* Flower spins slowly when active. */
+.ricon--flower .ricon__petal {
+  fill: currentColor;
+  opacity: 0.55;
+}
+
+.ricon--flower .ricon__core {
+  fill: currentColor;
+}
+
+.ricon--flower.ricon--active {
+  animation: ricon-spin 3.4s linear infinite;
+  transform-origin: center;
+}
+
+.ricon--flower.ricon--active .ricon__petal {
+  animation: ricon-flower-pulse 1.8s ease-in-out infinite;
+}
+
+.ricon--flower.ricon--active .ricon__petal--0 {
+  animation-delay: 0s;
+}
+.ricon--flower.ricon--active .ricon__petal--1 {
+  animation-delay: 0.15s;
+}
+.ricon--flower.ricon--active .ricon__petal--2 {
+  animation-delay: 0.3s;
+}
+.ricon--flower.ricon--active .ricon__petal--3 {
+  animation-delay: 0.45s;
+}
+.ricon--flower.ricon--active .ricon__petal--4 {
+  animation-delay: 0.6s;
+}
+.ricon--flower.ricon--active .ricon__petal--5 {
+  animation-delay: 0.75s;
+}
+
+@keyframes ricon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ricon-flower-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Stack dots: drift up and down. */
+.ricon--stack .ricon__bead {
+  fill: currentColor;
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0.55;
+}
+
+.ricon--stack.ricon--active .ricon__bead {
+  animation: ricon-bead 1.4s ease-in-out infinite;
+}
+
+.ricon--stack.ricon--active .ricon__bead--0 {
+  animation-delay: 0s;
+}
+.ricon--stack.ricon--active .ricon__bead--1 {
+  animation-delay: 0.12s;
+}
+.ricon--stack.ricon--active .ricon__bead--2 {
+  animation-delay: 0.24s;
+}
+.ricon--stack.ricon--active .ricon__bead--3 {
+  animation-delay: 0.36s;
+}
+.ricon--stack.ricon--active .ricon__bead--4 {
+  animation-delay: 0.48s;
+}
+.ricon--stack.ricon--active .ricon__bead--5 {
+  animation-delay: 0.6s;
+}
+
+@keyframes ricon-bead {
+  0%,
+  100% {
+    transform: translateY(0) scale(0.85);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-1.5px) scale(1);
+    opacity: 1;
+  }
+}
+
+.ricon--chevron {
+  color: var(--color-text-muted);
+}
+
+/* Brushstroke / squiggle below the active row. */
+.ricon-squiggle {
+  display: block;
+  margin: 4px 0 2px 4px;
+}
+
+.ricon-squiggle path {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+  animation: ricon-squiggle-draw 1.6s ease-in-out infinite;
+}
+
+@keyframes ricon-squiggle-draw {
+  0% {
+    stroke-dashoffset: 80;
+    opacity: 0.2;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: -80;
+    opacity: 0.2;
+  }
+}

@@ -1,0 +1,28 @@
+.processing {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-top: 20px;
+}
+
+.processing__prompt {
+  background: var(--color-background-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 16px 20px;
+}
+
+.processing__prompt p {
+  margin: 6px 0 0;
+  font-size: 16px;
+  color: var(--color-text-primary);
+}
+
+.processing__visual {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px 28px;
+  max-width: 620px;
+  margin: 0 auto;
+  width: 100%;
+}

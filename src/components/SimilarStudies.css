@@ -1,0 +1,275 @@
+.similar {
+  background: var(--color-background-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.similar__head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.similar__lede {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+/* ============================================================
+   Hero closest-match card
+   ============================================================ */
+
+.similar__hero {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-brand);
+  border-left: 3px solid var(--color-brand);
+  border-radius: var(--border-radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.similar__hero-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.similar__hero-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--color-brand);
+  flex-shrink: 0;
+}
+
+.similar__hero-tag {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-brand);
+}
+
+.similar__pill {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  background: var(--color-brand-soft);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.similar__similarity {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.similar__similarity-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.similar__similarity-value {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.similar__hero-summary {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.similar__hero-divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 4px 0;
+}
+
+/* ============================================================
+   Definition list — technical details inside hero card
+   ============================================================ */
+
+.similar__dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  row-gap: 10px;
+  column-gap: 16px;
+  align-items: baseline;
+}
+
+.similar__dl dt {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.similar__dl dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.similar__muted {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.similar__chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.similar__chip {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+/* ============================================================
+   Neighbor strip — 3-column horizontal grid
+   ============================================================ */
+
+.similar__neighbors {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.similar__neighbors-label {
+  margin-bottom: 2px;
+}
+
+.similar__neighbor-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.similar__neighbor-card {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.similar__neighbor-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.similar__neighbor-tag {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: -0.005em;
+}
+
+.similar__axis {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  background: var(--color-background-secondary);
+  white-space: nowrap;
+}
+
+.similar__axis--industry {
+  color: var(--color-brand);
+  border-color: var(--color-brand-soft);
+  background: var(--color-brand-soft);
+}
+
+.similar__axis--use-case {
+  color: var(--color-freed);
+  border-color: var(--color-freed-soft);
+  background: var(--color-freed-soft);
+}
+
+.similar__axis--role {
+  color: var(--color-text-secondary);
+}
+
+.similar__neighbor-use {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--color-text-secondary);
+}
+
+/* ============================================================
+   Privacy footnote
+   ============================================================ */
+
+.similar__privacy {
+  margin: 0;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.01em;
+}
+
+/* ============================================================
+   Responsive: stack neighbors at narrow widths
+   ============================================================ */
+
+@media (max-width: 720px) {
+  .similar__neighbor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .similar__dl {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+  .similar__dl dt {
+    margin-top: 8px;
+  }
+  .similar__similarity {
+    margin-left: 0;
+  }
+}
